@@ -1,0 +1,42 @@
+# These are a bunch of properties to link anything to a UD pos tag, feature or relation:
+
+bdo:udpostag a owl:ObjectProperty ;
+    rdfs:label "UD pos tag"@en ;
+    rdfs:comment "Link to the UD POS tag" ;
+    rdfs:range udpos:POS .
+
+bdo:udfeat a owl:ObjectProperty ;
+    rdfs:label "UD feature tag"@en ;
+    rdfs:comment "Link to the UD feature tag" ;
+    rdfs:range udfeat:Feature .
+
+bdo:udrel a owl:ObjectProperty ;
+    rdfs:label "UD relation tag"@en ;
+    rdfs:comment "Link to the UD relation tag" ;
+    rdfs:range uddep:Relation .
+
+# These are properties to link a text token (or anything else) to a lexical entry, form or sense:
+
+bdo:lexentry a owl:ObjectProperty ;
+    rdfs:label "lexical entry"@en , "lemma"@en ;
+    rdfs:range ontolex:LexicalEntry .
+
+bdo:lexform a owl:ObjectProperty ;
+    rdfs:label "form"@en ;
+    rdfs:range ontolex:writtenRep .
+
+bdo:lexsense a owl:ObjectProperty ;
+    rdfs:label "lexical sense"@en ;
+    rdfs:range ontolex:LexicalSense .
+
+# These are the arg1 and arg2 non-standard relationship used by LIM:
+
+@prefix limrel: <https://tibetan-nlp.github.io/lim-annodoc/deprel/> .
+
+limrel:arg1 a uddep:Relation ;
+    rdfs:label "arg1" , "first argument"@en ;
+    rdfs:comment "the first argument or "subject" of a verb, which may be agentive or unmarked, but not oblique"@en .
+
+limrel:arg2 a uddep:Relation ;
+    rdfs:label "arg2" , "second argument"@en ;
+    rdfs:comment "the second argument or "object" of a verb, which cannot be oblique"@en .

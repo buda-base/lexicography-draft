@@ -1,0 +1,47 @@
+# 
+# This is the entry point of the result.
+# The T* entities are defined in either:
+#  - dzl129a.nif.ttl
+#  - dzl129a.powla.ttl
+#
+# The lexical entries are in lexicography.ttl
+#
+# The additional vocabulary (classes and properties) are in the vocabulary/ folder
+#
+
+lim:T24 rdfs:label    "འདི་"@bo ;
+        # pointing to UD tag and feature
+        bdo:udpostag  udpos:DET ;
+        bdo:udfeat    udfeat:Dem ;
+        # pointing to the lexical entry (lemma)
+        bdo:lexentry  limnv:0235 .
+
+lim:T25 rdfs:label    "སྐད་"@bo ;
+        bdo:udpostag  udpos:NOUN ;
+        bdo:lexentry  limnv:X001  .
+
+lim:T26 rdfs:label    "བདག་"@bo ;
+        bdo:udpostag  udpos:PRON ;
+        bdo:udfeat    udfeat:Prs ;
+        bdo:lexentry  limnv:0231  .
+
+lim:T28 rdfs:label    "ཐོས་པ"@bo ;
+        bdo:udpostag  udpos:VERB ;
+        bdo:udfeat    udfeat:Vnoun ;
+        bdo:lexentry  limverb:0783 ;
+        # even pointing to the sense
+        bdo:lexsense  limverb:0783_Sense1 .
+
+# between lim:T28 and lim:T25
+lim:R2  :relationUD limrel:arg2 .
+
+# between lim:T28 and lim:T26
+lim:R3  :relationUD limrel:arg1 .
+
+
+
+
+
+
+
+

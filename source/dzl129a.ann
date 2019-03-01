@@ -1,0 +1,33 @@
+# extract from the BRAT annotations on
+# http://tibetanverbs.soas.ac.uk/~badw/#/mdzangs_blun/129a
+
+T24	DET 71 75	འདི་
+A24a	PronType T24 Dem
+N24	Reference T24 Nonverbs:0235	འདི་√d
+T25	NOUN 75 79	སྐད་
+A25a	NounType T25 Rel
+T26	PRON 79 83	བདག་
+A26a	PronType T26 Prs
+N26	Reference T26 Nonverbs:0231	བདག་√p
+T27	ADP 83 87	གིས་
+A27a	Case T27 Agn
+N27	Reference T27 Nonverbs:0026	གྱིས་√case
+T28	VERB 87 92	ཐོས་པ
+A28a	VerbForm T28 Vnoun
+N28	Reference T28 Hill:0783	ཐོས་
+T29	ADP 92 95	འི་
+A29a	Case T29 Gen
+N29	Reference T29 Nonverbs:0012	གྱི་√case
+T30	NOUN 95 99	དུས་
+A30a	Number T30 Sing
+N30	Reference T30 Nonverbs:0461	དུས་
+T31	NUM 99 104	གཅིག་
+A31a	NumType T31 Card
+A31b	NumForm T31 Word
+T32	ADP 104 105	ན
+A32a	Case T32 Loc
+N32	Reference T32 Nonverbs:0039	ན་√case
+T33	PUNCT 105 106	།
+
+R2	arg2 Arg1:T28 Arg2:T25	
+R3	arg1 Arg1:T28 Arg2:T26	

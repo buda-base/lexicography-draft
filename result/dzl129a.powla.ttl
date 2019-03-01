@@ -1,0 +1,75 @@
+@base <https://raw.githubusercontent.com/tibetan-nlp/soas-corpus/master/classical-tibetan/mdzangs_blun/brat-annotations/> .
+@prefix powla: <http://purl.org/powla/powla.owl#> .
+@prefix udpos:  <https://universaldependencies.org/u/pos/> .
+@prefix udfeat: <https://universaldependencies.org/u/feat/> .
+@prefix uddep:  <https://universaldependencies.org/u/dep/> .
+@prefix lim:   <http://tibetan-nlp.github.io/lim-annodoc/> .
+
+#
+# here I don't understand how to reference the "base layer" or unicode text...
+# see http://purl.org/powla for more info
+#
+
+# relations
+
+lim:R2  a powla:Relation ;
+        
+        :hasSource lim:T28 ;
+        :hasTarget lim:T25 .
+
+lim:R3  a powla:Relation ;
+        :relationUD limrel:arg1 ;
+        :hasSource lim:T28 ;
+        :hasTarget lim:T25 .
+
+# token chopping
+
+lim:T24 a powla:Terminal ;
+        powla:string "འདི་"@bo ;
+        powla:start 71 ;
+        powla:end 75 .
+
+lim:T25 a powla:Terminal ;
+        powla:string "སྐད་"@bo ;
+        powla:start 75 ;
+        powla:end 79 .
+
+lim:T26 a powla:Terminal ;
+        powla:string "བདག་"@bo ;
+        powla:start 79 ;
+        powla:end 83 .
+
+lim:T27 a powla:Terminal ;
+        powla:string "གིས་"@bo ;
+        powla:start 83 ;
+        powla:end 87 .
+
+lim:T28 a powla:Terminal ;
+        powla:string "ཐོས་པ"@bo ;
+        powla:start 87 ;
+        powla:end 92 .
+
+lim:T29 a powla:Terminal ;
+        powla:string "འི་"@bo ;
+        powla:start 92 ;
+        powla:end 95 .
+
+lim:T30 a powla:Terminal ;
+        powla:string "དུས་"@bo ;
+        powla:start 95 ;
+        powla:end 99 .
+
+lim:T31 a powla:Terminal ;
+        powla:string "གཅིག་"@bo ;
+        powla:start 99 ;
+        powla:end 104 .
+
+lim:T32 a powla:Terminal ;
+        powla:string "ན"@bo ;
+        powla:start 104 ;
+        powla:end 105 .
+
+lim:T33 a powla:Terminal ;
+        powla:string "།"@bo ;
+        powla:start 105 ;
+        powla:end 106 .

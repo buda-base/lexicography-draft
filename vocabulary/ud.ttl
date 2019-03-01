@@ -1,0 +1,56 @@
+# This is a tiny part of the UD tags converted to linked data.
+# Just a very first draft, see
+# https://github.com/UniversalDependencies/docs/issues/613
+
+@prefix udpos:  <https://universaldependencies.org/u/pos/> .
+@prefix udfeat: <https://universaldependencies.org/u/feat/> .
+@prefix uddep:  <https://universaldependencies.org/u/dep/> .
+
+udpos:POS a owl:Class ;
+    owl:sameAs <http://www.wikidata.org/entity/Q82042> ;
+    rdfs:label "POS" , "part of speech tag"@en .
+
+udpos:DET a udpos:POS ;
+	rdfs:label "DET" , "determiner"@en .
+
+udpos:NOUN a udpos:POS ;
+	rdfs:label "NOUN" , "noun"@en .
+
+udpos:PRON a udpos:POS ;
+	rdfs:label "PRON" , "pronoun"@en .
+
+udpos:ADP a udpos:POS ;
+	rdfs:label "ADP" , "adposition"@en .
+
+udpos:VERB a udpos:POS ;
+	rdfs:label "VERB" , "verb"@en .
+
+udfeat:Feature a owl:Class ;
+    rdfs:label "Feature" , "feature type"@en .
+
+udfeat:PronType a owl:Class ;
+	rdfs:subclassOf udfeat:Feature ;
+	rdfs:label "PronType" , "pronoun type"@en .
+
+udfeat:Case a owl:Class ;
+	rdfs:subclassOf udfeat:Feature ;
+	rdfs:label "Case" , "case"@en .
+
+udfeat:VerbForm a owl:Class ;
+	rdfs:subclassOf udfeat:Feature ;
+	rdfs:label "VerbForm" , "verb form"@en .
+
+udfeat:Dem a udfeat:PronType ;
+    rdfs:label "Dem" , "demonstrative pronoun, determiner, numeral or adverb"@en .
+
+udfeat:Prs a udfeat:PronType ;
+    rdfs:label "Prs" , "personal or possessive personal pronoun or determiner"@en .
+
+udfeat:Gen a udfeat:Case ;
+    rdfs:label "Gen" , "genitive"@en .
+
+udfeat:Vnoun a udfeat:VerbForm ;
+    rdfs:label "Vnoun" , "verbal noun, masdar" .
+
+uddep:Relation a owl:Class ;
+    rdfs:label "Relation" , "relation"@en .
