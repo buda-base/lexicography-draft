@@ -1,31 +1,33 @@
 # These are a bunch of properties to link anything to a UD pos tag, feature or relation:
 
-bdo:udpostag a owl:ObjectProperty ;
+@prefix bdolex: <http://purl.bdrc.io/ontology/ext/lex/> .
+
+bdolex:udpostag a owl:ObjectProperty ;
     rdfs:label "UD pos tag"@en ;
     rdfs:comment "Link to the UD POS tag" ;
     rdfs:range udpos:POS .
 
-bdo:udfeat a owl:ObjectProperty ;
+bdolex:udfeat a owl:ObjectProperty ;
     rdfs:label "UD feature tag"@en ;
     rdfs:comment "Link to the UD feature tag" ;
     rdfs:range udfeat:Feature .
 
-bdo:udrel a owl:ObjectProperty ;
+bdolex:udrel a owl:ObjectProperty ;
     rdfs:label "UD relation tag"@en ;
     rdfs:comment "Link to the UD relation tag" ;
     rdfs:range uddep:Relation .
 
 # These are properties to link a text token (or anything else) to a lexical entry, form or sense:
 
-bdo:lexentry a owl:ObjectProperty ;
+bdolex:lexentry a owl:ObjectProperty ;
     rdfs:label "lexical entry"@en , "lemma"@en ;
     rdfs:range ontolex:LexicalEntry .
 
-bdo:lexform a owl:ObjectProperty ;
+bdolex:lexform a owl:ObjectProperty ;
     rdfs:label "form"@en ;
     rdfs:range ontolex:writtenRep .
 
-bdo:lexsense a owl:ObjectProperty ;
+bdolex:lexsense a owl:ObjectProperty ;
     rdfs:label "lexical sense"@en ;
     rdfs:range ontolex:LexicalSense .
 

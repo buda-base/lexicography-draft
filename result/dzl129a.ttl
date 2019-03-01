@@ -9,28 +9,33 @@
 # The additional vocabulary (classes and properties) are in the vocabulary/ folder
 #
 
+# not sure this prefix is very good
+@prefix lim:   <http://tibetan-nlp.github.io/lim-annodoc/> .
+# doesn't exist yet
+@prefix bdolex: <http://purl.bdrc.io/ontology/ext/lex/> .
+
 lim:T24 rdfs:label    "འདི་"@bo ;
         # pointing to UD tag and feature
-        bdo:udpostag  udpos:DET ;
-        bdo:udfeat    udfeat:Dem ;
+        bdolex:udpostag  udpos:DET ;
+        bdolex:udfeat    udfeat:Dem ;
         # pointing to the lexical entry (lemma)
-        bdo:lexentry  limnv:0235 .
+        bdolex:lexentry  limnv:0235 .
 
 lim:T25 rdfs:label    "སྐད་"@bo ;
-        bdo:udpostag  udpos:NOUN ;
-        bdo:lexentry  limnv:X001  .
+        bdolex:udpostag  udpos:NOUN ;
+        bdolex:lexentry  limnv:X001  .
 
 lim:T26 rdfs:label    "བདག་"@bo ;
-        bdo:udpostag  udpos:PRON ;
-        bdo:udfeat    udfeat:Prs ;
-        bdo:lexentry  limnv:0231  .
+        bdolex:udpostag  udpos:PRON ;
+        bdolex:udfeat    udfeat:Prs ;
+        bdolex:lexentry  limnv:0231  .
 
 lim:T28 rdfs:label    "ཐོས་པ"@bo ;
-        bdo:udpostag  udpos:VERB ;
-        bdo:udfeat    udfeat:Vnoun ;
-        bdo:lexentry  limverb:0783 ;
+        bdolex:udpostag  udpos:VERB ;
+        bdolex:udfeat    udfeat:Vnoun ;
+        bdolex:lexentry  limverb:0783 ;
         # even pointing to the sense
-        bdo:lexsense  limverb:0783_Sense1 .
+        bdolex:lexsense  limverb:0783_Sense1 .
 
 # between lim:T28 and lim:T25
 lim:R2  :relationUD limrel:arg2 .

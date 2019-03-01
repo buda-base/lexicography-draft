@@ -4,16 +4,16 @@
 # https://www.w3.org/2016/05/ontolex/
 #
 
-
 @prefix limverb: <http://tibetan-nlp.github.io/lim-annodoc/verb/> .
 @prefix limnv: <http://tibetan-nlp.github.io/lim-annodoc/nonverbs/> . ?
 @prefix lim:   <http://tibetan-nlp.github.io/lim-annodoc/> .
+@prefix bdolex: <http://purl.bdrc.io/ontology/ext/lex/> .
 
 limverb:0783 a ontolex:LexicalEntry ;
 	dct:language  <http://id.loc.gov/vocabulary/iso639-3/bod> ;
 	ontolex:sense limverb:0783_Sense1 , limverb:0783_Sense2 ;
-	bdo:udpostag  udpos:VERB ;
-    bdo:udfeat    udfeat:Vnoun ;
+	bdolex:udpostag  udpos:VERB ;
+    bdolex:udfeat    udfeat:Vnoun ;
     # here we should find ways to express that the verb is Involontary (or should it be set at each use?)
     # same for Ergative-Absolutive
 	ontolex:canonicalForm bdr:Hill0783_FCAN .
@@ -33,8 +33,8 @@ limverb:0783_Sense2 a ontolex:LexicalSense;
 limnv:0235  a ontolex:LexicalEntry ;
 	rdfs:label "འདི་√d" ;
 	dct:language  <http://id.loc.gov/vocabulary/iso639-3/bod> ;
-	bdo:udpostag  udpos:DET ;
-    bdo:udfeat    udfeat:Dem ;
+	bdolex:udpostag  udpos:DET ;
+    bdolex:udfeat    udfeat:Dem ;
 	ontolex:canonicalForm limnv:0235_FCAN .
 
 limnv:0235_FCAN ontolex:writtenRep "འདི"@bo .
@@ -42,7 +42,7 @@ limnv:0235_FCAN ontolex:writtenRep "འདི"@bo .
 limnv:X001  a ontolex:LexicalEntry ;
 	rdfs:label "སྐད་" ;
 	dct:language  <http://id.loc.gov/vocabulary/iso639-3/bod> ;
-	bdo:udpostag  udpos:NOUN ;
+	bdolex:udpostag  udpos:NOUN ;
 	ontolex:canonicalForm limnv:X001_FCAN .
 
 limnv:X001_FCAN ontolex:writtenRep "སྐད"@bo .
@@ -50,7 +50,8 @@ limnv:X001_FCAN ontolex:writtenRep "སྐད"@bo .
 limnv:0231  a ontolex:LexicalEntry ;
 	rdfs:label "བདག་√p" ;
 	dct:language  <http://id.loc.gov/vocabulary/iso639-3/bod> ;
-	lexinfo:partOfSpeech 
+	bdolex:udpostag  udpos:PRON ;
+    bdolex:udfeat    udfeat:Prs ;
 	ontolex:canonicalForm limnv:0231_FCAN .
 
 limnv:0231_FCAN ontolex:writtenRep "བདག"@bo .
