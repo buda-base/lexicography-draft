@@ -11,3 +11,6 @@ See:
 - UD in RDF ([#613](https://github.com/UniversalDependencies/docs/issues/613))
 
 I'm not sure there's anything under copyright here, but just in case please consider it's under [CC0](https://creativecommons.org/publicdomain/zero/1.0/).
+
+TODO:
+- read [these proceedings](http://lrec-conf.org/workshops/lrec2018/W23/pdf/book_of_proceedings.pdf)
